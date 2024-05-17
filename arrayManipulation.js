@@ -12,14 +12,14 @@ function processArray(arr) {
 }
 
 //Example
-const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+const numbers = [1, 2, 3, 4, 5]
 console.log(processArray(numbers))
 
 
 function formatArrayStrings(strings, numbers) {
     return strings.map((str, index) => {
-        const num =numbers[index];
-        if (num % 2 ===0) {
+        const correspondingNum = numbers [index];
+        if (correspondingNum % 2 ===0) {
             //capitaize strings with even corresponding numbers
             return str.toUpperCase();
         }
@@ -30,7 +30,7 @@ function formatArrayStrings(strings, numbers) {
 }
 
 //Example 2
-const strings = ["Hello", "World", "I", "am", "glad", "to", "be","here", "with", "you"]
+const strings = ["Guess", "I", "am", "stuck", "here", ]
 console.log(formatArrayStrings(strings,numbers))
 
 module.exports = {
